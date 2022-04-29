@@ -1,0 +1,58 @@
+.top-Nav {
+  background: white;
+  height: 5vmin;
+  position: relative;
+  color: black;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+}
+ul i {
+  color: black;
+}
+.clientPortal button {
+  background: #1c417a;
+  color: white;
+  padding: 0.2rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.top-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vmin;
+  width: 100%;
+}
+.list-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  font-size: 18px;
+  height: 5vmin !important;
+}
+@media screen and (max-width: 1000px) {
+  .top-Nav {
+    display: none;
+  }
+  .top-nav-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 10vmin !important;
+  }
+  .list-container {
+    width: 100%;
+  }
+  .list-container {
+    position: relative;
+    top: auto;
+    margin: auto 0;
+  }
+}

@@ -1,0 +1,42 @@
+#list{
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20vh;
+    overflow-y: scroll;
+}
+.options{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px 0 15px 70px;
+}
+.options img{
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    width: 25px;
+
+}
+.options:hover{
+    background: blue;
+    color: white;
+
+}
+.hide{
+    visibility: hidden;
+    
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+.marqueeContainer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  background: black;
+  color: white;
+}
+.marqueeCards {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15rem;
+  margin-right: 5rem;
+
+}
+.marqueeCards h1{
+  margin: auto 0;
+}
+.cardTopSection {
+  display: block;
+  width: 100%;
+text-align: center;
+}
+.cardBottomSection {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+h3 {
+  font-weight: bold;
+  color: #00e20b;
+  margin: auto 0;
+
+  /* text-shadow: 0 0 5px #00e20b, 0 0 5px #00e20b, 0 0 5px #00e20b,
+    0 0 5px #00e20b, 0 0 5px #00e20b, 0 0 5px #00e20b, 0 0 5px #00e20b; */
+}

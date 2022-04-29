@@ -1,0 +1,74 @@
+import React, { useState } from "react";
+import style from "./reg.module.css";
+import axios from "axios";
+
+const RegistrationForm = () => {
+  const [formchange, setFormchange] = useState({
+    contact: "",
+    pass: "",
+  });
+
+  const handleChange = (e) => {
+    setFormchange({
+      ...formchange,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formchange.contact);
+
+    // try {
+    //   const { data } = await axios.get(
+    //     `https://e-vyapar.com/api/register.aspx?mob=${contact}&pass=${pass}&fname=${fname}&regtype=${gst}&na=${fullName}&reg_no=${doc}&address=${address}&country=${country}&state=${state}&distt=${district}&city=${city}&aadhar=${aadhar}&pan=${pan}&ftype=${reg}&gst_type=GST&empcode=${dealerData.emp_code}&emp_name=${dealerData.name}`
+    //   );
+
+    //   history.push("/");
+    //   setAuth(true);
+    // } catch (error) {
+    //   setResult("User not verified");
+    // }
+  };
+  return (
+    <div id={style.mycontainer}>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <div className={style.formbody}>
+          <h1 className="text-center">Registration</h1>
+          <div className="row">
+            <div className="col-12 col-md-12 col-lg-6">
+              <div id={style.row}>
+                <div className={style.labels}>
+                  <label htmlFor="">Mobile Number</label>
+                </div>
+                <input
+                  type="number"
+                  name="contact"
+                  value={formchange.contact}
+                  onChange={(e) => handleChange(e)}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-md-12 col-lg-6">
+            <div id={style.row}>
+              <div className={style.labels}>
+                <label htmlFor="password">Password</label>
+              </div>
+              <input
+                type="password"
+                name="pass"
+                placeholder="Enter password"
+                value={formchange.pass}
+                required
+                onChange={(e) => handleChange(e)}
+              />
+            </div>
+          </div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default RegistrationForm;

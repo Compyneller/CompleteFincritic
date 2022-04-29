@@ -1,0 +1,175 @@
+.mycontainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  
+  position: relative;
+}
+.backgroundVideo{
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  background: #011557;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.mobileCode{
+  width: 20rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.mobileCode select{
+  width: 20%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.formbody{
+  position: relative;
+}
+.crossIcon{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 30px;
+  transition: 250ms ease-out;
+  cursor: pointer;
+}
+.flagSelect{
+  width: 100%;
+}
+.crossIcon:hover{
+  transition: 500ms ease-in;
+  transform: rotate(90deg);
+}
+.mobileCode input{
+  width: 75% !important;
+  margin: auto 0;
+}
+.backgroundVideo video{
+  width: 100% ;
+  mix-blend-mode: lighten !important;
+
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+label h1 p {
+  font-family: "Poppins", sans-serif;
+}
+.formbody {
+  width: 500px;
+  min-height: 550px;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.heading {
+  text-align: center;
+  font-weight: bold;
+  /* position: absolute; */
+  /* top: 10vh; */
+  /* margin: 0 auto; */
+  /* display: flex; */
+  margin-bottom: 2rem;
+  /* background: yellow; */
+
+  color: #011557;
+}
+.inputs {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: left;
+
+  flex-direction: column;
+}
+.registerBtn {
+  width: 100%;
+}
+
+.inputs label {
+  font-weight: bold;
+}
+.inputs input {
+  margin-bottom: 2rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  outline: black;
+  padding: 0 1rem;
+}
+.inputs button {
+  background: #011557;
+  color: white;
+  padding: 0.3rem 3rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: fit-content;
+}
+.register {
+  display: flex;
+}
+.register a {
+  color: #011557;
+}
+.mobile {
+  display: flex;
+  flex-direction: column;
+}
+.mobile button {
+  width: fit-content;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: rgb(0, 195, 255);
+  /* margin-left: 10px; */
+  transition: 250ms ease-out;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.mobile button:hover {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  background: rgb(0, 195, 255);
+  transition: 250ms ease-in;
+  /* margin-left: 10px; */
+}
+
+.success {
+  color: rgb(0, 182, 0);
+  text-align: center;
+}
+.failed {
+  color: red;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

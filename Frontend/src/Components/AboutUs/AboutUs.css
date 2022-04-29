@@ -1,0 +1,66 @@
+.fincriticContainer{
+    width: 100%;
+    background: #011557;
+
+}
+.fincriticAboutUs h1{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  
+    
+}
+.fincriticAboutUs{
+    color: white;
+}
+.fincriticAboutUs h3{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3rem;
+}
+.fincriticAboutUs p{
+    font-size: 20px;
+    line-height: 40px;
+
+}
+.fincriticAboutUs h5{
+    font-weight: bold;
+}
+.providerCards{
+    transition: 250ms ease-out;
+    max-width: 250px;
+    min-height: 25rem;
+    display: flex;
+    justify-content: start !important;
+    padding: 1rem;
+    color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        #0077ff, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+}
+.providerCards:hover{
+    transition: 250ms ease-in;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+}
+
+.fincriticAboutUs i{
+    font-size: 50px;
+    margin-bottom: 2rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #0077ff, 0 0 0px #0077ff, 0 0 00px #0077ff, 0 0 0px #0077ff, 0 0 0px #0077ff;
+      }
+      
+      to {
+        text-shadow: 0 0 0px #fff, 0 0 0px #0077ff, 0 0 40px #0077ff, 0 0 50px #0077ff, 0 0 60px #0077ff, 0 0 70px #0077ff, 0 0 80px #0077ff;
+      }
+}

@@ -1,0 +1,75 @@
+.section2Card{
+    width: 100%;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+.section2Card h1{
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Prompt', sans-serif;
+
+}
+.section2Container{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section2Card h3{
+    color: black;
+    font-weight: bold;
+}
+.thumbsup{
+    font-size: 50px !important;
+}
+.section2Card i{
+    font-size: 30px;
+}
+.section2Card p{
+    font-size: 18px;
+}
+.section2Link{
+    width: 12rem;
+    max-width: 250px;
+    padding: 1rem;
+    color: #0077ff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-width: 3px;
+    text-decoration: none;
+    transition: 250ms ease-out;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        #0077ff, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+}
+.section2Link:hover{
+    background: #0077ff;
+    color: white;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+    box-shadow: 0px 0px 20px 0px rgba(0,136,255,1);
+}
+
+@media screen and (max-width : 1000px) {
+    .section2Card{
+        margin-bottom: 5rem;
+    }
+
+    .newTrader h1{
+        font-size: 35px !important;
+
+    }
+    .newTrader p{
+        font-size: 13px !important;
+    }
+    .newTrader a{
+        font-size: 18px;
+    }
+    
+}

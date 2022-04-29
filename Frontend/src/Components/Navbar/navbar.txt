@@ -1,0 +1,40 @@
+<div className="dropdown2">
+          <div
+            className="dropdown2-btn"
+            onClick={(e) => setIsActive(!isActive)}
+          >
+            {selectCountry === "srilanka" ? (
+              <img className="selectedImage" src={lk} />
+            ) : (
+              <img className="selectedImage" src={ind} alt="" />
+            )}
+          </div>
+          {isActive && (
+            <div className="dropdown2-content">
+              <div
+                className="dropdown2-item"
+                onClick={(e) => {
+                  setSelectCountry("india");
+                  setIsActive(false);
+                }}
+              >
+                <div className="dropdown2-item-image">
+                  <img src={ind} alt="" />
+                </div>
+                {/* <p>India</p> */}
+              </div>
+              <div
+                className="dropdown2-item"
+                onClick={(e) => {
+                  setSelectCountry("srilanka");
+                  setIsActive(false);
+                }}
+              >
+                <div className="dropdown2-item-image">
+                  <img src={lk} alt="" />
+                </div>
+                {/* <p>Sri Lanka</p> */}
+              </div>
+            </div>
+          )}
+        </div>
