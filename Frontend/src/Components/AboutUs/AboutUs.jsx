@@ -5,7 +5,8 @@ const AboutUs = () => {
     <div className="fincriticContainer py-5 " id="aboutus">
       <div className="container py-5 fincriticAboutUs">
         <h1 style={{ fontSize: "35px" }}>About FINCRITIC</h1>
-        <p style={{ fontSize: "18px" }}>
+        <br />
+        <p className="text-center" style={{ fontSize: "18px" }}>
           {" "}
           FINCRITIC has entered the forex exchange industry with a vision to
           provide its customers with a superior experience in forex exchange. We
@@ -18,7 +19,14 @@ const AboutUs = () => {
           with FINCRTIC. Join hands with us and let us together create history
           in the forex exchange industry.{" "}
         </p>
-        <h3>What do we provide?</h3>
+        <br />
+        <br />
+
+        <h1 className="text-center" style={{ fontSize: "35px" }}>
+          What do we provide?
+        </h1>
+        <br />
+        <br />
         <div className="row">
           <div className="col-12 col-lg-3 d-flex align-items-center justify-content-center ">
             <div className="w-100 d-flex align-items-center justify-content-center flex-column text-center providerCards">
